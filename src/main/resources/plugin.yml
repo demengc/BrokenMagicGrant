@@ -1,0 +1,12 @@
+name: BrokenMagicGrant
+version: ${project.version}
+main: ga.demeng7215.brokenmagicgrant.BrokenMagicGrant
+author: Demeng7215
+description: Give your players ranks through a simple GUI.
+website: http://demeng7215.ga/
+
+commands:
+  brokenmagicgrant:
+    description: Displays plugin information.
+  grant:
+    description: Give players ranks through a GUI.

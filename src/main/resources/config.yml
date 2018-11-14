@@ -1,0 +1,9 @@
+# Configuration file for BrokenMagicGrant by Demeng7215 #
+
+prefix: "&9[BrokenMagicGrant] "
+
+console: "&fYou must be a player to execute this command."
+
+no-permission: "&fSorry, you do not have permission to open the GUI."
+
+invalid-usage: "&fInvalid usage. Correct usage: &d/grant <player>&f."

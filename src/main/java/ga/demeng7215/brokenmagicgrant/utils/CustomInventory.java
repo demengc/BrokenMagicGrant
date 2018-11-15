@@ -52,23 +52,9 @@ public abstract class CustomInventory {
         }
     }
 
-    public Inventory getInventory() {
-        return inv;
-    }
-
     public void open(Player p) {
         p.openInventory(inv);
         openInventories.put(p.getUniqueId(), getUUID());
-    }
-
-    public void delete() {
-        for (Player p : Bukkit.getOnlinePlayers()) {
-            UUID u = openInventories.get(p.getUniqueId());
-            if (u.equals(getUUID())) {
-                p.closeInventory();
-            }
-        }
-        inventoriesByUUID.remove(getUUID());
     }
 
     private UUID getUUID() {
@@ -77,10 +63,6 @@ public abstract class CustomInventory {
 
     public static Map<UUID, CustomInventory> getInventoriesByUUID() {
         return inventoriesByUUID;
-    }
-
-    public static Map<UUID, UUID> getOpenInventories() {
-        return openInventories;
     }
 
     public Map<Integer, InvAction> getActions() {
